@@ -1,0 +1,12 @@
+server:
+  port: 8082
+security:
+  user:
+    name: user
+    password: pass
+zuul:
+  routes:
+    resource:
+      path: /resource/**
+      url: http://localhost:8081
+      sensitive-headers:
